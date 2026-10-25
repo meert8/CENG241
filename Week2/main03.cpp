@@ -1,7 +1,7 @@
 #include <iostream>
 
 namespace ScopeA {
-    void print() {
+    void print2() {
         std::cout << "Namespace Scope A\n";
     }
 }
@@ -13,7 +13,9 @@ namespace ScopeB {
 }
 
 using namespace ScopeB;
+using namespace ScopeA;
 
 int main() {
     print();
+    print2();
 }

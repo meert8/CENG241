@@ -15,5 +15,9 @@ int main() {
     cin >> a >> b;
     cout << sum(a, b) << endl;
 
+    string s1 = "Hello ";
+    string s2= "World";
+    cout<<sum(s1,s2)<<endl;
+
     return 0;
 }

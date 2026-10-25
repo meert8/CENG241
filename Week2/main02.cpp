@@ -13,5 +13,6 @@ namespace ScopeB {
 }
 
 int main() {
-    //print();
+    ScopeA::print();
+    ScopeB::print();
 }
