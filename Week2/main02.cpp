@@ -11,8 +11,10 @@ namespace ScopeB {
         std::cout << "Namespace Scope B\n";
     }
 }
+using namespace ScopeA;
 
 int main() {
     ScopeA::print();
+    print();
     ScopeB::print();
 }
