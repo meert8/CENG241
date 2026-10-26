@@ -10,7 +10,8 @@ class One{
 
 int main ( ) {
       One obj;    
-      obj.x = 5 ;   
+      //obj.print(); trash value output bcs x didnt assigned yet.
+      cin>>obj.x;   
       obj.print( ) ;
 
       return 0;

@@ -8,6 +8,7 @@ class Rectangle {
             void setWidth(int);
 	 		void setLength(int);
 			int area( ); 
+			int perimeter();
 	};
 	void Rectangle::setWidth(int w)	
 	{    width = w;  }
@@ -15,12 +16,16 @@ class Rectangle {
 	{    length = lng;  }
 	int Rectangle::area( )	
 	{    return length*width;  }
+	int Rectangle::perimeter(){
+		return 2*(width+length);
+	}
 	
     int main ( ) {
 	       Rectangle r; 		
 	       r.setWidth (5);   		
 	       r.setLength (3);   		
-	       cout << r.area( );
+	       cout << r.area( )<<endl;
+		   cout<<r.perimeter()<<endl;
            
            return 0;
 	

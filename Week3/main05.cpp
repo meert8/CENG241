@@ -6,9 +6,9 @@ class Account {
       
       public :			
       	void initialize (int);
- 	int check ( ) { return balance; }
- 	void withdraw (int);
-	void deposit (int money) { balance += money ; } 
+ 	      int check ( ) { return balance; }
+ 	      void withdraw (int);
+	      void deposit (int money) { balance += money ; } 
 };
 
 void Account::initialize (int x)	
@@ -38,12 +38,14 @@ int main ( ) {
                 cout << "Amount to withdraw: ";
 	cin >> amount;
 	mine.withdraw(amount);
+      cout << "Balance=" << mine.check( ) << endl;
            }
             else if  (action =='D')
           { 
                 cout << "Amount to deposit: ";
 	cin >> amount;
 	mine.deposit(amount);
+      cout << "Balance=" << mine.check( ) << endl;
            }
      } while (action != 'Q');
 
