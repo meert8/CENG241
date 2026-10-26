@@ -7,6 +7,8 @@ void example(int* &p, double *q) {
 
     p = &newValue;     // Changes the original pointer
     q = &newDouble;    // Changes only the local copy of the pointer
+    cout<<*p<<endl;
+    cout<<*q<<endl;
 }
 
 int main() {
